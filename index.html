@@ -4,9 +4,93 @@
 <head>
   <meta charset="utf-8">
   <title>Music History</title>
+  <link rel="stylesheet" type="text/css" href="main.css">
 </head>
 
 <body>
+<nav>
+    <ul class="nav">
+      <li><a href="#">View Music</a></li>
+      <li class="inlineMiddle"><a href="#">Add Music</a></li>
+      <li><a href="#">Profile</a></li>
+    </ul>
+  </nav>
+<br>
+<section class="genre">
+<br>
+  <label>Song Length:</label>
+  <br>
+  <br>
+    <input type="range">
+<br>
+<br>
+
+<label for="artist">Artist:</label>
+<br>
+        <select id="artist" name="artist">
+            <option value="wu_tang">Wu-Tang Clan</option>
+            <option value="run_the_jewels">Run the Jewels</option>
+            <option value="mumford_sons">Mumford & Sons</option>
+            <option value="the_xx">The XX</option>
+            <option value="pretty_lights">Pretty Lights</option>
+        </select>
+
+<br>
+<br>
+<label for="album">Album:</label>
+<br>
+        <select id="album" name="album">
+            <option value="enter_the_wu_tang">Enter the Wu-Tang (36 Chambers)</option>
+            <option value="wilder_mind">Wilder Mind</option>
+            <option value="run_the_jewels">Run The Jewels</option>
+            <option value="xx">XX</option>
+            <option value="filling_up_the_city">Filling Up the City Skies</option>
+        </select>
+<br>
+<br>
+        <label>Genre:</label>
+        <br> 
+        <br>
+          <table>
+            <tr>
+              <td><input type="checkbox" id="rock" value="genre_rock" name="genre_rock"><label class="" for="rock">Rock</label></td>
+              <td><input type="checkbox" id="pop" value="genre_pop" name="genre_pop"><label class="" for="pop">Pop</label></td>
+            </tr>
+            <tr>
+              <td><input type="checkbox" id="blues" value="genre_blues" name="genre_blues"><label class="" for="blues">Blues</label></td>
+              <td><input type="checkbox" id="classical" value="genre_classical" name="genre_classical"><label class="" for="classical">Classical</label></td>
+            </tr>
+            <tr>
+              <td><input type="checkbox" id="electronic" value="genre_electronic" name="genre_electronic"><label class="" for="electronic">Electronic</label></td>
+              <td><input type="checkbox" id="hiphop" value="genre_hiphop" name="genre_hiphop"><label class="" for="rock">Hip-Hop</label></td>
+          </tr>
+          </table> 
+          <br>
+          <div class="button">
+          <button>
+            Filter
+          </button>
+          </div>
+        </section>
+
+        <section class="songInfo">
+          <h1 class="song">C.R.E.A.M</h1>
+          <p class="inline">Wu-Tang Clan</p>
+          <p class="inlineMiddle">Enter The Wu-Tang (36 Chambers)</p>
+          <p class="inline">Hip-Hop</p>
+          <h1 class="song">Hot Like Sauce</h1>
+          <p class="inline">Pretty Lights</p>
+          <p class="inlineMiddle">Filling Up The City Skies</p>
+          <p class="inline">Electronic</p>
+          <h1 class="song">Ditmas</h1>
+          <p class="inline">Mumford & Sons</p>
+          <p class="inlineMiddle">Wilder Mind</p>
+          <p class="inline">Rock</p>
+          <h1 class="song">DDFH</h1>
+          <p class="inline">Run The Jewels</p>
+          <p class="inlineMiddle">Run The Jewels</p>
+          <p class="inline">Hip-Hop</p>
+        </section>
 
 
 </body>
